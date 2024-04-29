@@ -1,0 +1,96 @@
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+  border-radius: var(--rounded-btn, 0.5rem);
+  border-color: rgb(249, 249, 249);
+  border-width: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.card-custom .card-body .card-title {
+  text-decoration: none; /* Menonaktifkan dekorasi garis */
+}
+
+.primary {
+  color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border-radius: var(--rounded-btn, 0.5rem);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(120, 255, 96, 0.05) 100%
+  );
+}
+
+/* Sidebar */
+/* Sidebar */
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #f8f9fa;
+  color: #000;
+  transition: all 0.3s;
+  /* Position the sidebar */
+  position: fixed;
+  height: 100%;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+.sidebar-header {
+  padding: 20px;
+}
+
+.sidebar-header h3 {
+  margin-bottom: 0;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul li {
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+#sidebar ul li a {
+  color: #000;
+}
+
+#sidebar ul li:hover {
+  background: #eee;
+}
+
+/* Page Content */
+#content {
+  width: 100%;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+/* Toggle button */
+#sidebarCollapse {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border: none;
+  cursor: pointer;
+}
+
+#sidebarCollapse i {
+  color: #000;
+}
